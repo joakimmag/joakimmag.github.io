@@ -1,0 +1,24 @@
+body {
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#text-container {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#router {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
