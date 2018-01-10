@@ -1,24 +1,154 @@
 body {
-    background-image: url(img/bg.png);
-    background-repeat: repeat;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background-image: url(img/bg.png);
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#text {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+#heading {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-#text-container {
-    margin-bottom: 50px;
-    margin-top: 50px;
+#router-container {
+  position: relative;
 }
 
 #router {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+  margin-top: 180px;
+  position: relative;
+}
+
+#adjustable {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 130px;
+  top: 10px;
+  transition: opacity .1s;
+}
+
+#antenna-left-container {
+  position: absolute;
+  left: 120px;
+}
+
+#antenna-left {
+  transform-origin: bottom center;
+  transform: rotate(-10deg);
+  transition: filter .1s;
+  -webkit-backface-visibility: hidden;
+}
+
+#antenna-left:hover {
+  cursor: ew-resize;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.7));
+}
+
+#antenna-right-container {
+  position: absolute;
+  right: 100px;
+}
+
+#antenna-right {
+  transform-origin: bottom center;
+  transform: rotate(10deg);
+  transition: filter .1s;
+  -webkit-backface-visibility: hidden;
+}
+
+#antenna-right:hover {
+  cursor: ew-resize;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.7));
+}
+
+.led {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #5fef74;
+  box-shadow: 0 0 5px #5fef74;
+  position: absolute;
+  bottom: 54px;
+}
+
+#pwr-led {
+  left: 123px;
+}
+
+#wlan-led {
+  left: 206px;
+  animation: wlan-blinker 3s linear infinite;
+}
+
+@keyframes wlan-blinker {
+  15% { opacity: 1; }
+  16% { opacity: 0; }
+  17% { opacity: 0; }
+  18% { opacity: 1; }
+
+  25% { opacity: 1; }
+  26% { opacity: 0; }
+  27% { opacity: 0; }
+  28% { opacity: 1; }
+
+  75% { opacity: 1; }
+  76% { opacity: 0; }
+  77% { opacity: 0; }
+  78% { opacity: 1; }
+}
+
+#port2-led {
+  left: 239px;
+  animation: port2-blinker 3s linear infinite;
+}
+
+@keyframes port2-blinker {
+  21% { opacity: 1; }
+  22% { opacity: 0; }
+  23% { opacity: 0; }
+  24% { opacity: 1; }
+
+  48% { opacity: 1; }
+  49% { opacity: 0; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+
+  80% { opacity: 1; }
+  81% { opacity: 0; }
+  82% { opacity: 0; }
+  83% { opacity: 1; }
+}
+
+#int-led {
+  left: 288px;
+  animation: int-blinker 3s linear infinite;
+}
+
+@keyframes int-blinker {
+  15% { opacity: 1; }
+  16% { opacity: 0; }
+  17% { opacity: 0; }
+  18% { opacity: 1; }
+
+  21% { opacity: 1; }
+  22% { opacity: 0; }
+  23% { opacity: 0; }
+  24% { opacity: 1; }
+
+  48% { opacity: 1; }
+  49% { opacity: 0; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+
+  75% { opacity: 1; }
+  76% { opacity: 0; }
+  77% { opacity: 0; }
+  78% { opacity: 1; }
+
+  80% { opacity: 1; }
+  81% { opacity: 0; }
+  82% { opacity: 0; }
+  83% { opacity: 1; }
 }
