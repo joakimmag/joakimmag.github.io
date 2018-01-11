@@ -24,7 +24,7 @@ body {
   font-family: "Times New Roman", sans-serif;
   font-size: 14px;
   position: absolute;
-  left: 130px;
+  left: 125px;
   top: 10px;
   transition: opacity .1s;
 }
