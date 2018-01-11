@@ -64,8 +64,8 @@ body {
 }
 
 .led {
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: #5fef74;
   box-shadow: 0 0 5px #5fef74;
