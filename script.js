@@ -1,3 +1,5 @@
+"use strict";
+
 var al = {};
 al.base = {};
 al.base.x = 0;
