@@ -32,8 +32,7 @@ function initRotation(antenna) {
   antenna.base.y = antenna.rect.bottom;
 
   window.onmousemove = function(event) {
-    var rotation = calcRotation(antenna.base.x, antenna.base.y, event.pageX,
-      event.pageY);
+    var rotation = calcRotation(antenna.base.x, antenna.base.y, event.pageX, event.pageY);
     rotation = 90 - rotation;
     if (rotation <= 70 && rotation >= -70) {
       antenna.element.style.transform = "rotate(" + rotation + "deg)";
